@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cortez — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <h1 id="site-title">Cortez — Clinical Psychology Student & Accessibility Advocate</h1>
+    <p id="tagline">Accessible design, research, and dev-adjacent skills</p>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main" aria-labelledby="site-title">
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul>
+        <li>
+          <h3>Accessible Website Review</h3>
+          <p>Short description — link to the repo or a hosted demo.</p>
+          <p><a href="https://github.com/yourusername/project1">View code</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <p>HTML, accessibility testing, screen reader workflows, basic CSS, research skills</p>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>Short paragraph about you. Mention your accessibility experience and what you're studying.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© <span id="year"></span> Cortez</p>
+  </footer>
+
+  <script>
+    // small JS only to set the year; optional
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
